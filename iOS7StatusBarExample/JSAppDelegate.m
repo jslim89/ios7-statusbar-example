@@ -7,13 +7,37 @@
 //
 
 #import "JSAppDelegate.h"
+#import "JSMainViewController.h"
 
 @implementation JSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    JSMainViewController *mainViewController = [[JSMainViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    navigationController.navigationBar.translucent = NO;
+    self.window.rootViewController = navigationController;
+    
+    // styling
+    UIColor *barBackgroundColor = [UIColor colorWithRed:107/255.0 green:207/255.0 blue:250/255.0 alpha:1];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIFont fontWithName:@"HelveticaNeue-Bold" size:17], UITextAttributeFont,
+                                                          [UIColor whiteColor], UITextAttributeTextColor,
+                                                          [UIColor clearColor], UITextAttributeTextShadowColor,
+                                                          nil]];
+    [[UIBarButtonItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                          [UIFont fontWithName:@"HelveticaNeue-Medium" size:15], UITextAttributeFont,
+                                                          [UIColor whiteColor], UITextAttributeTextColor,
+                                                          [UIColor clearColor], UITextAttributeTextShadowColor,
+                                                          nil] forState:UIControlStateNormal];
+    [[UINavigationBar appearance] setBarTintColor:barBackgroundColor];
+    // [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

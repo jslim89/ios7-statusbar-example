@@ -19,6 +19,12 @@
 		4B0EBA76194F270100636515 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B0EBA5E194F270100636515 /* UIKit.framework */; };
 		4B0EBA7E194F270100636515 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EBA7C194F270100636515 /* InfoPlist.strings */; };
 		4B0EBA80194F270100636515 /* iOS7StatusBarExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EBA7F194F270100636515 /* iOS7StatusBarExampleTests.m */; };
+		4B0EBA8B194F272000636515 /* JSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EBA8A194F272000636515 /* JSMainViewController.m */; };
+		4B0EBA8F194F2ECA00636515 /* JSTransparentBgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B0EBA8E194F2ECA00636515 /* JSTransparentBgViewController.m */; };
+		4B0EBA98194F315900636515 /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EBA96194F315900636515 /* Cover.png */; };
+		4B0EBA99194F315900636515 /* Cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EBA97194F315900636515 /* Cover@2x.png */; };
+		4B0EBA9C194F349700636515 /* BackIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EBA9A194F349700636515 /* BackIndicator.png */; };
+		4B0EBA9D194F349700636515 /* BackIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B0EBA9B194F349700636515 /* BackIndicator@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,14 @@
 		4B0EBA7B194F270100636515 /* iOS7StatusBarExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS7StatusBarExampleTests-Info.plist"; sourceTree = "<group>"; };
 		4B0EBA7D194F270100636515 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B0EBA7F194F270100636515 /* iOS7StatusBarExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS7StatusBarExampleTests.m; sourceTree = "<group>"; };
+		4B0EBA89194F272000636515 /* JSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSMainViewController.h; sourceTree = "<group>"; };
+		4B0EBA8A194F272000636515 /* JSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSMainViewController.m; sourceTree = "<group>"; };
+		4B0EBA8D194F2ECA00636515 /* JSTransparentBgViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTransparentBgViewController.h; sourceTree = "<group>"; };
+		4B0EBA8E194F2ECA00636515 /* JSTransparentBgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSTransparentBgViewController.m; sourceTree = "<group>"; };
+		4B0EBA96194F315900636515 /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
+		4B0EBA97194F315900636515 /* Cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cover@2x.png"; sourceTree = "<group>"; };
+		4B0EBA9A194F349700636515 /* BackIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackIndicator.png; sourceTree = "<group>"; };
+		4B0EBA9B194F349700636515 /* BackIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BackIndicator@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,7 @@
 				4B0EBA79194F270100636515 /* iOS7StatusBarExampleTests */,
 				4B0EBA59194F270100636515 /* Frameworks */,
 				4B0EBA58194F270100636515 /* Products */,
+				4B0EBA90194F304800636515 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +124,10 @@
 			children = (
 				4B0EBA69194F270100636515 /* JSAppDelegate.h */,
 				4B0EBA6A194F270100636515 /* JSAppDelegate.m */,
+				4B0EBA89194F272000636515 /* JSMainViewController.h */,
+				4B0EBA8A194F272000636515 /* JSMainViewController.m */,
+				4B0EBA8D194F2ECA00636515 /* JSTransparentBgViewController.h */,
+				4B0EBA8E194F2ECA00636515 /* JSTransparentBgViewController.m */,
 				4B0EBA6C194F270100636515 /* Images.xcassets */,
 				4B0EBA61194F270100636515 /* Supporting Files */,
 			);
@@ -142,6 +161,25 @@
 				4B0EBA7C194F270100636515 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B0EBA90194F304800636515 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B0EBA91194F304800636515 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B0EBA91194F304800636515 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B0EBA96194F315900636515 /* Cover.png */,
+				4B0EBA97194F315900636515 /* Cover@2x.png */,
+				4B0EBA9A194F349700636515 /* BackIndicator.png */,
+				4B0EBA9B194F349700636515 /* BackIndicator@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +258,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B0EBA99194F315900636515 /* Cover@2x.png in Resources */,
 				4B0EBA65194F270100636515 /* InfoPlist.strings in Resources */,
+				4B0EBA9C194F349700636515 /* BackIndicator.png in Resources */,
+				4B0EBA9D194F349700636515 /* BackIndicator@2x.png in Resources */,
+				4B0EBA98194F315900636515 /* Cover.png in Resources */,
 				4B0EBA6D194F270100636515 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B0EBA67194F270100636515 /* main.m in Sources */,
+				4B0EBA8F194F2ECA00636515 /* JSTransparentBgViewController.m in Sources */,
 				4B0EBA6B194F270100636515 /* JSAppDelegate.m in Sources */,
+				4B0EBA8B194F272000636515 /* JSMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
